@@ -1,0 +1,71 @@
+/* homepage styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar-brand {
+  color: blue;
+}
+.navbar-nav li {
+  margin-right: 2rem;
+}
+
+.navbar-nav li a i {
+  font-size: 20px;
+}
+
+.navbar-nav li a i:hover {
+  color: #198754;
+}
+
+.search-button {
+  border-radius: 4px;
+}
+
+.form {
+  margin-right: 100px;
+}
+
+.user {
+  position: absolute;
+  top: 21%;
+  right: 0;
+}
+
+.user img {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.present i {
+  color: #198754;
+}
+/* ask question page styling */
+.ask-container {
+  width: 400px;
+}
+
+.ask-container h3 {
+  font-size: 18px;
+}
+
+.ask-container textarea {
+  resize: none;
+  width: 400px;
+  height: 200px;
+}
+
+.ask-container textarea::placeholder {
+  font-size: 14px;
+}
+
+.ask-button {
+  width: 200px;
+}
