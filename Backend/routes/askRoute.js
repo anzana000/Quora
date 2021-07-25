@@ -8,4 +8,10 @@ router
   .post(askController.askQuestion)
   .get(askController.showAllQuestions);
 
+router
+  .route("/:id")
+  .get(askController.getQuestion)
+  .delete(askController.deleteQuestion)
+  .patch(askController.updateQuestion);
+
 module.exports = router;

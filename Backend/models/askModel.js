@@ -1,13 +1,17 @@
 const mongoose = require("mongoose");
 
-const askSchema = mongoose.schema({
+const askSchema = new mongoose.Schema({
   question: {
     type: String,
     required: [true, "Question field is required"],
     trim: true,
   },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
+  },
 });
 
-const Questions = mongoose.model("Questions", askSchema);
+const Question = mongoose.model("Question", askSchema);
 
-module.exports = Questions;
+module.exports = Question;
